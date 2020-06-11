@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--Mis Estilos-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Titulo del sitio-->
+  <title>Kleenex&#174; y Cottonelle&#174; Te consienten</title>
+</head>
+
+<body>
+  <!--NAV-->
+  <nav class="nav-color navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img class="logo img-fluid" src="images/logo.png" alt="Kleenex & Cottonelle">
+    </a>
+    <button class="icono-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="text14 collapse navbar-collapse" id="navbarNav">
+      <div class="mi-nav reverse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancla" href="#mecanica">Mecánica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#registro" onclick="registrar()">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#premios">Premios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ganadores-proximamente">Ganadores</a>
+          </li>
+        </ul>
+        <div class="cont-ingresar">
+          <a class="nav-link" href="#login" onclick="login()">Ingresa</a>
+          <img src="images/user.png" alt="Usuario Icono">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--BANNER PRINCIPAL-->
+  <section class="principal container-fluid">
+    <section class="textoPrincipal">
+      <button onclick="location.href='index.html#registro'">Regístrate</button>
+    </section>
+    <picture>
+      <source media="(min-width: 769px)" srcset="images/Desktop.png">
+      <source media="(min-width: 426px)" srcset="images/Tablet.png">
+      <img class="img-fluid" src="images/Mobile.png" alt="Banner Principal de la Promoción">
+    </picture>
+  </section>
+
+  <!--MECÁNICA-->
+  <section class="container-fluid" id="mecanica">
+    <div class="titulo-seccion row">
+      <img class="img-titulos" src="images/Mecanica.png" alt="Mecánica">
+    </div>
+    <div class="cont-mecanica">
+      <div class="caja-mecanica">
+        <div class="cont-caja" id="meca-1">
+          <img class="img-static" src="images/mecanica1.png" alt="Compra Papel Higienico Kleenex Cottonell">
+          <p class="marco-texto">Compra</p>
+          <p class="texto-mecanica"><span>Compra</span> cualquier producto de pañuelos <span>Kleenex®</span> e higiénico <span>Kleenex® Cottonelle®</span>.</p>
+        </div>
+      </div>
+      <div class="caja-mecanica">
+        <div class="cont-caja" id="meca-2">
+          <img class="img-static" src="images/mecanica2.png" alt="Compra Papel Higienico Kleenex Cottonell">
+          <p class="marco-texto">Regístrate</p>
+          <p class="texto-mecanica"><span>Regístrate</span> en este sitio y envíanos <span>una foto de tu ticket</span> de compra.</p>
+        </div>
+      </div>
+      <div class="caja-mecanica">
+        <div class="cont-caja" id="meca-3">
+          <img class="img-static" src="images/mecanica3.png" alt="Compra Papel Higienico Kleenex Cottonell">
+          <p class="marco-texto">Participa</p>
+          <p class="texto-mecanica"><span>Participa</span> en nuestro <span>juego</span> y podrás ganar uno de los <span>premios semanales</span> que tenemos para ti.</p>
+        </div>
+      </div>
+    </div>
+    <!--
+        <div class="row">
+            <div class="col-12 col-md-4 aos-item" data-aos="fade-up">
+                <div class="caja-mecanica">
+                    <img class="img-static" src="images/mecanica1.png" alt="Compra Papel Higienico Kleenex Cottonell">
+                    <p><span class="marco-texto">Compra </span></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 aos-item" data-aos="fade-up">
+                <div class="caja-mecanica">
+                    <img class="img-static" src="images/mecanica2.png" alt="Registra tu ticket en este sitio">
+                    <p><span class="marco-texto">Regístrate </span></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 aos-item" data-aos="fade-up">
+                <div class="caja-mecanica">
+                    <img class="img-static" src="images/mecanica3.png" alt="Participa para ganar">
+                    <p><span class="marco-texto">Participa </span></p>
+                </div>
+            </div>
+        </div>
+        -->
+  </section>
+
+  <!--REGISTRO-->
+  <section class="container-fluid" id="registro">
+    <div class="titulo-seccion row">
+      <div class="text-center">
+        <img class="img-titulos" src="images/Registro.png" alt="Registro">
+        <p>Usa la flecha para abrir el registro o clic en <span class="underline semiBold" onclick="login()">Ingresar</span></p>
+        <div onclick="DespliegueRegistro()">
+          <img src="images/FlechaDown.gif" alt="..." id="flechaRegistro">
+        </div>
+      </div>
+    </div>
+    <!--INICIA FORMULARIO-->
+    <!--Contenedor del formulario-->
+    <div class="row justify-content-center animated" id="RegistroForm">
+      <form action="">
+        <div class="text-center">
+          <p class="underline semiBold" onclick="login()">Ya tengo cuenta</p>
+        </div>
+        <div class="cont-form">
+          <div>
+            <!-- "input-group" | Es el div que contiene al input | Dentro de este DIV aparecera tu validación de .NET -->
+            <div class="input-group">
+              <!--Input que sera sustituido por .NET-->
+              <input type="text" placeholder="Nombre">
+              <!--
+                                Según entendi, al texto de la validación puedes agregarle estilos,
+                                Hice una clase para tu texto de validación, espero te sirva, la dejo de ejemplo:
+                            -->
+              <!--Clase "estilo-validador"-->
+              <span class="estilo-validador">campo incorrecto</span>
+            </div>
+            <!--Termina el DIV contenedor del Input-->
+            <div class="input-group">
+              <input type="text" placeholder="Apellido">
+            </div>
+          </div>
+          <div>
+            <div class="input-group">
+              <input type="tel" placeholder="Teléfono">
+            </div>
+            <div class="input-group">
+              <div class="select">
+                <select class="custom-select width-select" name="" id="">
+                  <option selected>Selecciona tu Estado</option>
+                  <option value="">Aguascalientes</option>
+                  <option value="">Baja California</option>
+                  <option value="">Baja California Sur</option>
+                  <option value="">Campeche</option>
+                  <option value="">Ciudad de México</option>
+                  <option value="">Coahuila de Zaragoza</option>
+                  <option value="">Colima</option>
+                  <option value="">Chiapas</option>
+                  <option value="">Chihuahua</option>
+                  <option value="">Durango</option>
+                  <option value="">Guanajuato</option>
+                  <option value="">Guerrero</option>
+                  <option value="">Hidalgo</option>
+                  <option value="">Jalisco</option>
+                  <option value="">México</option>
+                  <option value="">Michoacán de Ocampo</option>
+                  <option value="">Morelos</option>
+                  <option value="">Nayarit</option>
+                  <option value="">Nuevo León</option>
+                  <option value="">Oaxaca</option>
+                  <option value="">Puebla</option>
+                  <option value="">Querétaro</option>
+                  <option value="">Quintana Roo</option>
+                  <option value="">San Luis Potosí</option>
+                  <option value="">Sinaloa</option>
+                  <option value="">Sonora</option>
+                  <option value="">Tabasco</option>
+                  <option value="">Tamaulipas</option>
+                  <option value="">Tlaxcala</option>
+                  <option value="">Veracruz</option>
+                  <option value="">Yucatán</option>
+                  <option value="">Zacatecas</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="input-group">
+              <input type="email" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+
+          <!-- En el caso las casillas checkbox el DIV contenedor del input y tu validación es: "input-group-checkbox"-->
+          <div class="input-group-checkbox">
+            <input class="check" type="checkbox" name="" id="">
+            <p>Certifico que soy mayor de 18 años</p>
+
+            <!--Dejo este <span> de ejemplo de tu validación con la clase "estilo-validador"-->
+            <span class="estilo-validador">campo incorrecto</span>
+
+
+          </div>
+        </div>
+        <div class="checkbox">
+          <div class="input-group-checkbox">
+            <input class="check" type="checkbox" name="" id="">
+            <p>Acepto los <a href="" target="_blank">Términos y Condiciones</a></p>
+          </div>
+        </div>
+        <div class="cont-boton">
+          <!--Botón de envio del formulario y redirecciona a la ThankYou Page-->
+          <button type="button" class="button" onclick="location.href='gracias-registro.html'">Enviar Registro</button>
+        </div>
+      </form>
+    </div>
+    <!--TERMINA FORMULARIO DE REGISTRO-->
+  </section>
+  <!--LOGIN-->
+  <section class="container-fluid" id="login">
+    <div class="titulo-seccion row">
+      <div class="text-center">
+        <img class="img-titulos" src="images/Ingresa.png" alt="Ingresa">
+        <p>Haz clic en <span class="underline semiBold" onclick="registrar()">Registro</span> si aún no tienes una cuenta</p>
+        <div>
+          <img src="images/FlechaDown.gif" alt="..." onclick="DespliegueLogIn()" id="flechaLogin">
+        </div>
+      </div>
+    </div>
+    <!--COMIENZA FORMULARIO DE LOGIN-->
+    <div class="row justify-content-center" id="LogInForm">
+      <form action="">
+        <div class="text-center">
+          <p class="underline semiBold" onclick="registrar()">No tengo cuenta</p>
+        </div>
+        <div class="cont-form">
+
+          <!--DIV "input-Group" para mantener el texto de la validación-->
+          <div class="input-group">
+            <input type="email" placeholder="Email">
+
+            <!--Ejemplo de la clase para agregar a los estilos de la validación-->
+            <span class="estilo-validador">campo incorrecto</span>
+
+          </div>
+        </div>
+        <div class="cont-boton">
+          <!--Boton de Ingresar - lleva a registrar el ticket-->
+          <button type="button" class="button" onclick="location.href='RegistroTicket.html'">Ingresar</button>
+        </div>
+      </form>
+    </div>
+    <!--TERMINA FORMULARIO DE LOGIN-->
+  </section>
+  <!--PREMIOS-->
+  <section class="container-fluid" id="premios">
+    <div class="titulo-seccion row">
+      <img class="img-titulos" src="images/Premios.png" alt="Premios">
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="micolor carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row cont-carousel">
+            <div class="col-12 col-md-6 flex-end">
+              <img class="img-fluid" src="images/PrimerLugar.png" alt="Primer Lugar">
+            </div>
+            <div class="col-12 col-md-6 align-texto">
+              <div class="cont-tex">
+                <h3>1º Lugar</h3>
+                <p><span class="semiBold">$10,000 MXN</span> en<br>monedero electrónico.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row cont-carousel">
+            <div class="col-12 col-md-6 flex-end">
+              <img class="img-fluid" src="images/SegundoLugar.png" alt="Segundo Lugar">
+            </div>
+            <div class="col-12 col-md-6 align-texto">
+              <div class="cont-tex">
+                <h3>2º Lugar</h3>
+                <p><span class="semiBold">$5,000 MXN</span> en<br>monedero electrónico.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row cont-carousel">
+            <div class="col-12 col-md-6 flex-end">
+              <img class="img-fluid" src="images/TercerLugar.png" alt="Tercer Lugar">
+            </div>
+            <div class="col-12 col-md-6 align-texto">
+              <div class="cont-tex">
+                <h3>3º Lugar</h3>
+                <p><span class="semiBold">$3,000 MXN</span> en<br>monedero electrónico.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!--GANADORES PROXIMAMENTE-->
+  <section class="background-cottonelle" id="ganadores-proximamente">
+    <section class="container-fluid ganadores-proximamente">
+      <div class="titulo-seccion row">
+        <img class="img-titulos" src="images/Ganadores.png" alt="ganadores">
+      </div>
+      <div>
+        <h4>Los ganadores aparecerán aquí,<br><span class="semiBold">próximamente</span>.</h4>
+        <img src="images/copa.png" alt="Copa de Ganadores">
+      </div>
+    </section>
+    <picture>
+      <source media="(min-width: 769px)" srcset="images/Desktop-Background.png">
+      <source media="(min-width: 426px)" srcset="images/Tablet-Background.png">
+      <img class="img-fluid" src="images/Mobile-Background.png" alt="Background">
+    </picture>
+  </section>
+
+  <!--GANADORES | TABLA DE GANADORES -->
+  <!--Solo se muestra cuando los ganadores sean publicados-->
+  <section class="background-cottonelle" id="ganadores">
+    <section class="container-fluid ganadores">
+      <div class="titulo-seccion row">
+        <img class="img-titulos" src="images/Ganadores.png" alt="ganadores">
+      </div>
+      <div class="cont-tabla-ganadores">
+        <div class="cont-img-ganador">
+          <img src="images/copa.gif" alt="Copa de Ganadores">
+        </div>
+        <!--PROPUESTA DE ORGANIZACIÓN DE GANADORES EN TABLA-->
+        <div class="cont-int-tabla">
+          <table>
+            <thead>
+              <th colspan="2">Ganadores Semana 1</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="texto-ganador">Nombre del Ganador</td>
+                <td class="texto-premios">Monedero electrónico con $ 10,000 MXN</td>
+              </tr>
+              <tr>
+                <td class="texto-ganador">Nombre del Ganador</td>
+                <td class="texto-premios">Monedero electrónico con $ 5,000 MXN</td>
+              </tr>
+              <tr>
+                <td class="texto-ganador">Nombre del Ganador</td>
+                <td class="texto-premios">Monedero electrónico con $ 3,000 MXN</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <table>
+            <thead>
+              <th colspan="2">Ganadores de la semana pasada</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nombre del Ganador</td>
+                <td class="texto-premios">Tipo de premios</td>
+              </tr>
+              <tr>
+                <td>Nombre del Ganador</td>
+                <td class="texto-premios">Tipo de premios</td>
+              </tr>
+              <tr>
+                <td>Nombre del Ganador</td>
+                <td class="texto-premios">Tipo de premios</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+        <div class="cont-img-ganador">
+          <img src="images/copa.gif" alt="Copa de Ganadores">
+        </div>
+      </div>
+    </section>
+    <picture>
+      <source media="(min-width: 769px)" srcset="images/Desktop-Background.png">
+      <source media="(min-width: 426px)" srcset="images/Tablet-Background.png">
+      <img class="img-fluid" src="images/Mobile-Background.png" alt="Background">
+    </picture>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="cont-img">
+      <img src="images/logo.png" alt="Cottonell">
+    </div>
+    <div class="cont-footer">
+      <ul>
+        <li class="text-white"><a href="" data-toggle="modal" data-target="#TerminosCondiciones">Términos y Condiciones</a></li>
+        <li class="text-white"><a href="" data-toggle="modal" data-target="#privacidad">Aviso de privacidad</a></li>
+        <li class="text-white"><a href="" data-toggle="modal" data-target="#bases">Bases de la promoción</a></li>
+        <li class="text-white"><a href="" data-toggle="modal" data-target="#faqs">Preguntas frecuentes</a></li>
+        <li class="text-white"><a href="" data-toggle="modal" data-target="#contacto">Contáctanos</a></li>
+
+      </ul>
+    </div>
+
+
+<div class="der">
+  <h1> <img class="r" src="images/kleenex-redes.png" alt="Logo Kleenex"> </h1>
+  <div class="red">
+  <div class="col iconMedia">
+    <img src="images/facebook.png" alt="Facebook">
+  </div>
+  <div class="col iconMedia">
+    <img src="images/instagram.png" alt="Instagram">
+  </div>
+  </div>
+
+  <h1> <img class="r" src="images/cottonelle-redes.png" alt="Logo Cottonell"> </h1>
+  <div class="red">
+  <div class="col iconMedia">
+    <img src="images/facebook.png" alt="Facebook">
+  </div>
+  <div class="col iconMedia">
+    <img src="images/instagram.png" alt="Instagram">
+  </div>
+  </div>
+
+</div>
+  </footer>
+
+  <!-- Modal | Términos y Condiciones Modal-->
+  <div class="modal fade" id="TerminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="TerminosCondiciones" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semiBold" id="TerminosCondiciones">Términos y Condiciones</h5>
+        </div>
+        <div class="modal-body overflowModal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | Aviso de privacidad-->
+  <div class="modal fade" id="privacidad" tabindex="-1" role="dialog" aria-labelledby="privacidad" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semiBold" id="privacidad">Aviso de privacidad</h5>
+        </div>
+        <div class="modal-body overflowModal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | Bases -->
+  <div class="modal fade" id="bases" tabindex="-1" role="dialog" aria-labelledby="bases" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semiBold" id="bases">Bases de la promoción</h5>
+        </div>
+        <div class="modal-body overflowModal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | Preguntas Frecuentes -->
+  <div class="modal fade" id="faqs" tabindex="-1" role="dialog" aria-labelledby="faqs" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semiBold" id="faqs">Preguntas frecuentes</h5>
+        </div>
+        <div class="modal-body overflowModal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | Contacto -->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contacto" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title semiBold" id="contacto">Contáctanos</h5>
+        </div>
+        <div class="modal-body overflowModal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TERMINA FOOTER-->
+
+
+  <!--Scripts Bootstrap-->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Mis Scripts-->
+  <script src="js/animacionRegistro.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+</body>
+
+</html>
