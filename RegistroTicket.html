@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Mis Estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Titulo del sitio-->
+    <title>Kleenex&#174; y Cottonelle&#174; Te consienten</title>
+</head>
+
+<body>
+    <!--NAV-->
+    <nav class="nav-color navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo img-fluid" src="images/logo.png" alt="Cottonelle">
+        </a>
+        <button class="icono-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="text14 collapse navbar-collapse" id="navbarNav">
+            <div class="mi-nav reverse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ancla" href="index.html#mecanica">Mecánica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#registro">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#premios">Premios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ganadores-proximamente">Ganadores</a>
+                    </li>
+                </ul>
+                <div class="cont-ingresar">
+                    <a class="nav-link" href="micuenta.html">Mi Cuenta</a>
+                    <img src="images/user.png" alt="Usuario Icono">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--CONTENEDOR-->
+    <section class="principal container-fluid">
+        <div class="cont-box">
+            <div class="box">
+                <div class="cont-img-box">
+                    <img src="images/RegistroTicket-img.png" alt="Registro de Ticket">
+                </div>
+                <div class="cont-text-box">
+                    <h1>Registra tu Ticket</h1>
+                    <p>Ingresa la información</p>
+
+
+
+                    <!-- FORM | COMIENZA EL REGISTRO DEL TICKET-->
+                    <div class="cont-form-box">
+                        <form class="form-box" action="">
+
+                            <!--
+                                En este caso el DIV que encierra a los inputs se llama "input-group-ticket"
+                                Dejo el <span> de ejemplo para que veas los estilos de texto de validación.
+                            -->
+
+                            <!--INPUT SUBIR ARCHIVO-->
+                            <div class="input-group-ticket file">
+                                <input type="file" name="file" id="file" class="input-file">
+                                <label for="file" class="btn btn-tertiary js-labelFile color">
+                                  <span class="js-fileName">&#x1F4F7; Sube tu foto</span>
+                                </label>
+                                <span class="estilo-validador">campo incorrecto</span>
+                            </div>
+
+                            <!--INPUT NO. DE TICKET-->
+                            <div class="input-group-ticket">
+                                <input type="text" placeholder="No. de Ticket">
+                                <span class="estilo-validador">campo incorrecto</span>
+                            </div>
+
+                            <!--INPUT MONTO TOTAL DE LOS PRODUCTOS-->
+                            <div class="input-group-ticket">
+                                <input type="number" placeholder="Monto total de productos Cottonelle (Ej: $500)">
+                            </div>
+
+                            <!--SELECT CON LA LISTA DE TIENDAS QUE NOS PASO COTTONELLE-->
+                            <div class="input-group-ticket">
+                                <div class="select">
+                                    <select class="custom-select" name="" id="">
+                                    <option selected>Selecciona la tienda donde compraste el producto</option>
+                                    <option value="">WALMEX</option>
+                                    <option value="">GRUPO CHEDRAUI</option>
+                                    <option value="">GRUPO HEB</option>
+                                    <option value="">CITY FRESKO</option>
+                                    <option value="">OPERADORA FUTURAMA, S.A. DE C.V.</option>
+                                    <option value="">OPERADORA DE CIUDAD JUÁREZ</option>
+                                    <option value="">CASA LEY</option>
+                                    <option value="">TIENDAS ARTELI</option>
+                                    <option value="">CALIMAX</option>
+                                    <option value="">SAM'S CLUB</option>
+                                    <option value="">COSTCO DE MEXICO, S.A. DE C.V.</option>
+                                    <option value="">CITY CLUB SORIANA</option>
+                                    <option value="">AMAZON MEXICO</option>
+                                    <option value="">TIENDA IMSS-SNTSS</option>
+                                    <option value="">I S S S T E</option>
+                                    <option value="">DECASA</option>
+                                    <option value="">SAHUAYO</option>
+                                    <option value="">ABARROTERA DEL DUERO</option>
+                                    <option value="">GABRIEL GARCES</option>
+                                    <option value="">ENRIQUE RIVERA CORTES</option>
+                                    <option value="">ZETA</option>
+                                    <option value="">IBARRA</option>
+                                    <option value="">SUPER GUTIERREZ</option>
+                                    <option value="">SUPER SAN FRANCISCO DE ASIS</option>
+                                    <option value="">OPERADORA MERCO, S.A. DE C.V.</option>
+                                    <option value="">GRUPO RUÍZ MENDOZA</option>
+                                    <option value="">GRUPO PARRAL</option>
+                                    <option value="">EL ZORRO ABARROTERO</option>
+                                    <option value="">CENTRAL DE VIVERES DEL SURESTE</option>
+                                    <option value="">GRUPO ABEL VARGAS</option>
+                                    <option value="">GRUPO JORGE GARCES</option>
+                                    <option value="">DON NICO</option>
+                                    <option value="">MULTI-SUPERET</option>
+                                    <option value="">SU PLAZA DE ACTOPAN</option>
+                                    <option value="">GRUPO CRESCENCIANO FUENTES</option>
+                                    <option value="">CHAPA</option>
+                                    <option value="">SCORPION DIST. MAYORISTA</option>
+                                    <option value="">FARMACIA GUADALAJARA</option>
+                                    <option value="">CADENA COMERCIAL OXXO</option>
+                                    <option value="">GRUPO BENAVIDES</option>
+                                    <option value="">FARMACIAS DEL AHORRO</option>
+                                    <option value="">NACIONAL DE DROGAS, S.A.</option>
+                                </select>
+                                </div>
+
+                            </div>
+                            <!--Boton de envio del formulario | gracias-->
+                            <button type="button" class="button margin-button width-100" onclick="location.href='gracias-ticket.html'">Registrar ticket</button>
+                        </form>
+                    </div>
+                    <!--FIN DEL FORMULARIO-->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <picture>
+        <source media="(min-width: 1180px)" srcset="images/BackgroundDesktop.png">
+        <source media="(min-width: 570px)" srcset="images/BackgroundTablet.png">
+        <img class="img-fluid" src="images/BackgroundMobile2.png" alt="Background">
+    </picture>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer>
+      <div class="cont-img">
+        <img src="images/logo.png" alt="Cottonell">
+      </div>
+      <div class="cont-footer">
+        <ul>
+          <li class="text-white"><a href="" data-toggle="modal" data-target="#TerminosCondiciones">Términos y Condiciones</a></li>
+          <li class="text-white"><a href="" data-toggle="modal" data-target="#privacidad">Aviso de privacidad</a></li>
+          <li class="text-white"><a href="" data-toggle="modal" data-target="#bases">Bases de la promoción</a></li>
+          <li class="text-white"><a href="" data-toggle="modal" data-target="#faqs">Preguntas frecuentes</a></li>
+          <li class="text-white"><a href="" data-toggle="modal" data-target="#contacto">Contáctanos</a></li>
+
+        </ul>
+      </div>
+
+
+    <div class="der">
+    <h1> <img class="r" src="images/kleenex-redes.png" alt="Logo Kleenex"> </h1>
+    <div class="red">
+    <div class="col iconMedia">
+      <img src="images/facebook.png" alt="Facebook">
+    </div>
+    <div class="col iconMedia">
+      <img src="images/instagram.png" alt="Instagram">
+    </div>
+    </div>
+
+    <h1> <img class="r" src="images/cottonelle-redes.png" alt="Logo Cottonell"> </h1>
+    <div class="red">
+    <div class="col iconMedia">
+      <img src="images/facebook.png" alt="Facebook">
+    </div>
+    <div class="col iconMedia">
+      <img src="images/instagram.png" alt="Instagram">
+    </div>
+    </div>
+
+    </div>
+    </footer>
+
+
+    <!-- Modal | Términos y Condiciones Modal-->
+    <div class="modal fade" id="TerminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="TerminosCondiciones" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="TerminosCondiciones">Términos y Condiciones</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Aviso de privacidad-->
+    <div class="modal fade" id="privacidad" tabindex="-1" role="dialog" aria-labelledby="privacidad" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="privacidad">Aviso de privacidad</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Bases -->
+    <div class="modal fade" id="bases" tabindex="-1" role="dialog" aria-labelledby="bases" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="bases">Bases de la promoción</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Preguntas Frecuentes -->
+    <div class="modal fade" id="faqs" tabindex="-1" role="dialog" aria-labelledby="faqs" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="faqs">Preguntas frecuentes</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal | Contacto -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contacto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title semiBold" id="contacto">Contáctanos</h5>
+                </div>
+                <div class="modal-body overflowModal">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button margin-button-modal" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TERMINA FOOTER-->
+
+
+
+
+
+    <!--Scripts Bootstrap-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Mis Scripts-->
+    <script src="js/inputFileStyle.js"></script>
+    <script src="js/animacionRegistro.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/inputFileStyle.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+
+</body>
+
+</html>
