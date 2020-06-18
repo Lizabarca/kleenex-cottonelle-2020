@@ -87,13 +87,13 @@
         <div class="cont-caja" id="meca-2">
           <img class="img-static" src="images/mecanica2.png" alt="Compra Papel Higienico Kleenex Cottonell">
           <p class="marco-texto">Regístrate</p>
-          <p class="texto-mecanica"><span>Regístrate</span> en este sitio y envíanos <span>una foto de tu ticket</span> de compra.</p>
+          <p class="texto-mecanica"><span>Regístrate</span> en este sitio y envíanos <span>una foto de tu ticket</span> de compra. A partir de $200 de compra tendrás doble participación.</p>
         </div>
       </div>
       <div class="caja-mecanica">
         <div class="cont-caja" id="meca-3">
           <img class="img-static" src="images/mecanica3.png" alt="Compra Papel Higienico Kleenex Cottonell">
-          <p class="marco-texto">Participa</p>
+          <p class="marco-texto">Juega y podrás ganar</p>
           <p class="texto-mecanica"><span>Participa</span> en nuestro <span>juego</span> y podrás ganar uno de los <span>premios semanales</span> que tenemos para ti.</p>
         </div>
       </div>
@@ -127,15 +127,13 @@
     <div class="titulo-seccion row">
       <div class="text-center">
         <img class="img-titulos" src="images/Registro.png" alt="Registro">
-        <p>Usa la flecha para abrir el registro o clic en <span class="underline semiBold" onclick="login()">Ingresar</span></p>
-        <div onclick="DespliegueRegistro()">
-          <img src="images/FlechaDown.gif" alt="..." id="flechaRegistro">
-        </div>
+        <p>Ingresa tus datos o clic en <span class="underline semiBold" onclick="login()">Ingresar</span></p>
+
       </div>
     </div>
     <!--INICIA FORMULARIO-->
     <!--Contenedor del formulario-->
-    <div class="row justify-content-center animated" id="RegistroForm">
+    <div class="row justify-content-center" id="">
       <form action="">
         <div class="text-center">
           <p class="underline semiBold" onclick="login()">Ya tengo cuenta</p>
@@ -241,9 +239,6 @@
       <div class="text-center">
         <img class="img-titulos" src="images/Ingresa.png" alt="Ingresa">
         <p>Haz clic en <span class="underline semiBold" onclick="registrar()">Registro</span> si aún no tienes una cuenta</p>
-        <div>
-          <img src="images/FlechaDown.gif" alt="..." onclick="DespliegueLogIn()" id="flechaLogin">
-        </div>
       </div>
     </div>
     <!--COMIENZA FORMULARIO DE LOGIN-->
@@ -277,11 +272,11 @@
       <img class="img-titulos" src="images/Premios.png" alt="Premios">
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="micolor carousel-indicators">
+      <!--<ol class="micolor carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
+      </ol>-->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row cont-carousel">
@@ -291,7 +286,7 @@
             <div class="col-12 col-md-6 align-texto">
               <div class="cont-tex">
                 <h3>1º Lugar</h3>
-                <p><span class="semiBold">$10,000 MXN</span> en<br>monedero electrónico.</p>
+                <h3>$10,000 MXN</h3><p>en monedero electrónico.</p>
               </div>
             </div>
           </div>
@@ -304,7 +299,7 @@
             <div class="col-12 col-md-6 align-texto">
               <div class="cont-tex">
                 <h3>2º Lugar</h3>
-                <p><span class="semiBold">$5,000 MXN</span> en<br>monedero electrónico.</p>
+                <h3>$5,000 MXN</h3><p>en monedero electrónico.</p>
               </div>
             </div>
           </div>
@@ -317,24 +312,24 @@
             <div class="col-12 col-md-6 align-texto">
               <div class="cont-tex">
                 <h3>3º Lugar</h3>
-                <p><span class="semiBold">$3,000 MXN</span> en<br>monedero electrónico.</p>
+                <h3>$3,000 MXN</h3><p>en monedero electrónico.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <!--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a>-->
     </div>
   </section>
   <!--GANADORES PROXIMAMENTE-->
-  <section class="background-cottonelle" id="ganadores-proximamente">
+  <section class="background-cottonelle" id="ganadores">
     <section class="container-fluid ganadores-proximamente">
       <div class="titulo-seccion row">
         <img class="img-titulos" src="images/Ganadores.png" alt="ganadores">
@@ -353,7 +348,7 @@
 
   <!--GANADORES | TABLA DE GANADORES -->
   <!--Solo se muestra cuando los ganadores sean publicados-->
-  <section class="background-cottonelle" id="ganadores">
+  <section class="background-cottonelle" id="">
     <section class="container-fluid ganadores">
       <div class="titulo-seccion row">
         <img class="img-titulos" src="images/Ganadores.png" alt="ganadores">
@@ -421,7 +416,7 @@
   <!--FOOTER-->
   <footer>
     <div class="cont-img">
-      <img src="images/logo.png" alt="Cottonell">
+      <img src="images/logo-footer.png" alt="Cottonell">
     </div>
     <div class="cont-footer">
       <ul>
@@ -435,7 +430,7 @@
     </div>
 
 
-<div class="der">
+  <div class="der">
   <h1> <img class="r" src="images/kleenex-redes.png" alt="Logo Kleenex"> </h1>
   <div class="red">
   <div class="col iconMedia">
@@ -446,7 +441,7 @@
   </div>
   </div>
 
-  <h1> <img class="r" src="images/cottonelle-redes.png" alt="Logo Cottonell"> </h1>
+  <h1> <img class="r2" src="images/cottonelle-redes.png" alt="Logo Cottonell"> </h1>
   <div class="red">
   <div class="col iconMedia">
     <img src="images/facebook.png" alt="Facebook">
@@ -456,7 +451,7 @@
   </div>
   </div>
 
-</div>
+  </div>
   </footer>
 
   <!-- Modal | Términos y Condiciones Modal-->

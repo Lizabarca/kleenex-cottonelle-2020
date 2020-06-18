@@ -279,47 +279,47 @@ option:focus {
 @media only screen and (max-width: 2100px) {
   .textoPrincipal {
     top: 450px;
-    padding-left: 420px; } }
+    padding-left: 0px; } }
 @media only screen and (max-width: 1600px) {
   .textoPrincipal {
     top: 400px;
-    padding-left: 380px; } }
+    padding-left: 0px; } }
 @media only screen and (max-width: 1400px) {
   .textoPrincipal {
     top: 360px;
-    padding-left: 320px; } }
+    padding-left: 0px; } }
 @media only screen and (max-width: 1280px) {
   .textoPrincipal {
     top: 340px;
-    padding-left: 300px; } }
+    padding-left: 0px; } }
 @media only screen and (max-width: 1205px) {
   .textoPrincipal {
     top: 320px;
-    padding-left: 280px; }
+    padding-left: 0px; }
     .textoPrincipal button {
       width: 30%; } }
 @media only screen and (max-width: 1120px) {
   .textoPrincipal {
     top: 300px;
-    padding-left: 260px; }
+    padding-left: 0px; }
     .textoPrincipal button {
       width: 30%; } }
 @media only screen and (max-width: 1010px) {
   .textoPrincipal {
     top: 280px;
-    padding-left: 230px; }
+    padding-left: 0px; }
     .textoPrincipal button {
       width: 30%; } }
 @media only screen and (max-width: 910px) {
   .textoPrincipal {
     top: 260px;
-    padding-left: 200px; }
+    padding-left: 0px; }
     .textoPrincipal button {
       width: 30%; } }
 @media only screen and (max-width: 810px) {
   .textoPrincipal {
     top: 240px;
-    padding-left: 180px; }
+    padding-left: 0px; }
     .textoPrincipal button {
       width: 30%; } }
 @media only screen and (max-width: 769px) {
@@ -432,7 +432,7 @@ option:focus {
       .cont-mecanica .caja-mecanica .cont-caja p {
         font-family: "Myriad-SemiBold";
         text-align: center;
-        font-size: 18pt;
+        font-size: 16pt;
         line-height: 1.4;
         margin: 2% 0% 0% 0%; }
         .cont-mecanica .caja-mecanica .cont-caja p span {
@@ -916,16 +916,20 @@ footer {
   position: absolute;
   right: 50px;
   text-align: center;
-  display: flex;
-  margin-top: 80px;
+  /*display: flex;
+  margin-top: 80px;*/
 }
 .red{
   display: flex;
   align-items: center;
 }
 .r{
-  padding: 10px 5px;
+  padding:0px 5px;
 }
+.r2{
+  padding:20px 5px 0px 5px;
+}
+
 @media only screen and (max-width: 998px){
   .der{
     position: absolute;
@@ -1445,6 +1449,10 @@ footer {
 
       .checkImg{
         max-width: 100px;
+        width: 100%;
+      }
+      .productImg{
+        max-width: 370px;
         width: 100%;
       }
       @media only screen and (max-width: 925px){
